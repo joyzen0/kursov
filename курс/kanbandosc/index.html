@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Канбан доска</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="todo.js" defer> </script> -->
+    <script src="script.js" defer> </script>
+ 
+</head>
+
+<body>
+  <div class="container">
+        <!--шапка-->
+        <header class="header">
+
+        <div class="header-right">
+                <div class="avatar">
+                <img src="images/avatar.png" alt="Avat">        
+                </div>
+            </div>
+
+        </header>
+
+
+    
+    <div class="main">          <!-- основная часть-->
+
+        <!--боковая панель--> 
+    <div class="bokpanel-1">
+        <div class="bokpanel">
+            <h2> Проекты  <button> + </button></h2>
+            <div class="poiskstroka">
+                <form id="poisk-form">
+                    <input type="text" placeholder="Поиск.." name="altpoisk">   <!--поисковая строка-->
+                </form>
+            </div>
+        
+            <a href="#"> Название проекта(1)</a>
+            <a href="#"> Проект 2</a>
+            <a href="#"> Проект 3</a>
+        </div>
+        
+    </div>
+        <!--конец боковой панели-->
+
+  <div class="vnutri">
+    <div class="osnova">
+      <div class="nazvanie">
+          <p> Название проекта(1)</p>
+      </div>
+
+      <div class="komanda">
+        <img src="images/avatar.png" alt="chel">
+        <img src="images/avatar2.png" alt="chel">
+        <img src="images/avatar3.png" alt="chel">
+
+          <button>+</button>
+ 
+      </div>
+
+        <div class="board">
+            <form id="todo-form">
+              <input type="text" placeholder="" id="todo-input" />
+              <button type="submit">Добавить</button>
+            </form>
+      
+            <div class="lanes">
+              <div class="stolb-1"> <h3> Не выполнено </h3>
+              <div class="swim-lane" id="todo-lane">
+      
+                <div class="kanbancards">
+                  <div class="kanban-card" draggable="true">
+  
+                      <p class="card-title">
+                          Придумать тему
+                      </p>
+  
+                      <div class="card-infos">
+                        <div class="user">
+                            <img src="images/avatar.png" alt="Avatar">
+                        </div>
+                          <div class="card-icons">
+                              <p>
+                                  11 дек. - 13 дек.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="kanbancards">
+                <div class="kanban-card" draggable="true">
+
+                    <p class="card-title">
+                        Придумать тему
+                    </p>
+
+                    <div class="card-infos">
+                      <div class="user">
+                          <img src="images/avatar2.png" alt="Avatar">
+                      </div>
+                        <div class="card-icons">
+                            <p>
+                                9 дек. - 10 дек.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+              </div>
+            </div>
+            
+            <div class="stolb-2"> <h3>В процессе</h3>
+              <div class="swim-lane">
+      
+                <div class="kanbancards">
+                  <div class="kanban-card" draggable="true">
+  
+                      <p class="card-title">
+                          Придумать тему
+                      </p>
+  
+                      <div class="card-infos">
+                        <div class="user">
+                            <img src="images/avatar2.png" alt="Avatar">
+                        </div>
+
+                          <div class="card-icons">
+                              <p>
+                                  7 дек. - 10 дек.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="kanbancards">
+                <div class="kanban-card" draggable="true">
+
+                    <p class="card-title">
+                        Придумать тему
+                    </p>
+
+                    <div class="card-infos">
+                      <div class="user">
+                          <img src="images/avatar.png" alt="Avatar">
+                      </div>
+                        <div class="card-icons">
+                            <p>
+                                12 дек. - 14 дек.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kanbancards">
+                <div class="kanban-card" draggable="true">
+
+                    <p class="card-title">
+                        Придумать тему
+                    </p>
+
+                    <div class="card-infos">
+                      <div class="user">
+                          <img src="images/avatar3.png" alt="Avatar">
+                      </div>
+                        <div class="card-icons">
+                            <p>
+                               12 дек. - 13 дек.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              </div>
+            </div>
+            
+            
+            <div class="stolb-3"> <h3>Запланированно</h3>
+              <div class="swim-lane">
+
+                <div class="kanbancards">
+                  <div class="kanban-card" draggable="true">
+  
+                      <p class="card-title">
+                          Придумать тему
+                      </p>
+  
+                      <div class="card-infos">
+                        <div class="user">
+                            <img src="images/avatar2.png" alt="Avatar">
+                        </div>
+
+                          <div class="card-icons">
+                              <p>
+                                  15 дек. - 18 дек.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                </div>
+              </div>
+
+
+              <div class="stolb-4"> <h3>Выполнено</h3>
+                <div class="swim-lane">
+        
+                  <div class="kanbancards">
+                    <div class="kanban-card" draggable="true">
+    
+                        <p class="card-title">
+                            Придумать тему
+                        </p>
+    
+                        <div class="card-infos">
+                            <div class="user">
+                                <img src="images/avatar.png" alt="Avatar">
+                            </div>
+
+                            <div class="card-icons">
+                                <p>
+                                    5 дек. - 11 дек.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kanbancards">
+                  <div class="kanban-card" draggable="true">
+  
+                      <p class="card-title">
+                          Придумать тему
+                      </p>
+                      <div class="card-infos">
+                        <div class="user">
+                            <img src="images/avatar3.png" alt="Avatar">
+                        </div>
+                          <div class="card-icons">
+                              <p>
+                                  6 дек. - 9 дек.
+                              </p>
+                          </div>
+  
+                      </div>
+                  </div>
+              </div>
+                
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+  </div>
+</body>
+</html>

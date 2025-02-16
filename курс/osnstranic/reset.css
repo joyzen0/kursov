@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a, a:visited, a:hover{
+    text-decoration: none;
+}
+
+a:focus, :active {
+    outline: none;
+}
